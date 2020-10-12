@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All games</title>
+</head>
+<body>
+
+<div>
+    <div th:each="game : ${games}">
+        <a th:href="@{/games/{name}(name=${game.getName()})}" th:text="${game.getName()}"></a>
+    </div>
+    <br/>
+    <br/>
+    <a href="/games/new">Add new game</a>
+</div>
+
+</body>
+</html>

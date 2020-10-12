@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>The Game</title>
+</head>
+<body>
+
+<p>The game: </p><p th:text="${game.getName()}">VALUE</p>
+<p>Description: </p><p th:text="${game.getDescription()}">VALUE</p>
+<br/>
+<a href="/games">Back to main page</a>
+
+</body>
+</html>
